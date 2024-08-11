@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор ключей Hamster kombat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="//api.shareus.io/verify.js" defer> </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор ключей</h1>
+        <div class="form-group">
+            <label for="gameSelect">Выберите игру</label>
+            <select id="gameSelect">
+                <option value="1">Riding Extreme 3D</option>
+                <option value="2">Chain Cube 2048</option>
+                <option value="3">My Clone Army</option>
+                <option value="4">Train Miner</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label id="keyCountLabel" for="keyCountSelect">Выберите количество ключей:</label>
+            <select id="keyCountSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+             
+            </select>
+        </div>
+        <button id="startBtn">Сгенерировать ключи</button>
+        <div id="progressContainer" class="hidden">
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <div id="progressText">0%</div>
+            <div id="progressLog">Генерируется...</div>
+        </div>
+        <div id="keyContainer" class="hidden">
+            <h3 id="generatedKeysTitle" class="hidden">Сгенерированные ключи:</h3>
+            <div id="keysList"></div>
+            <button id="copyAllBtn" class="hidden">Копировать все ключи</button>
+            <div id="copyStatus" class="hidden">Скопировано!</div>
+        </div>
+        <div class="footer">
+            <p>Поддержать автора USDT TRC20: TMSdjKXsNMwxhjR7vZW8hQwYWdGYRibvKM</p>
+            <p>Поддержать автора USDT TON: UQBOU-ycM0LJsI5nZtes3Anw3Xaa-qFwTyGYlVLTVb2jsr_s</p>
+        </div>
+        <button id="telegramChannelBtn"  href="https://t.me/hamsters_kombat_game">Подпишись на наш телеграмм канал</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
