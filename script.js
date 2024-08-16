@@ -276,10 +276,5 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('telegramChannelBtn').addEventListener('click', () => {
         window.open('https://t.me/hamsters_kombat_game', '_blank');
     });
-    document.getElementById('creatorChannelBtn').addEventListener('click', () => {
-        window.open('https://t.me/hamsters_kombat_game', '_blank');
-    });
-
-   
 
 });
